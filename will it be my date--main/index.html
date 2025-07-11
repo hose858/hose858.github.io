@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my date for the party?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container new-theme" role="main">
+        <h1 class="title">Will you be my date for the graduation party?</h1>
+        <section class="buttons" aria-label="Response options">
+            <button class="btn yes-btn" aria-label="Accept invitation" onclick="handleYesClick()">Yes</button>
+            <button class="btn no-btn" aria-label="Decline invitation" onclick="handleNoClick()">No</button>
+        </section>
+        <div class="gif_container">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute celebration gif">
+        </div>
+        <div id="feedback" class="feedback" aria-live="polite"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

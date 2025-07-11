@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(135deg, #f8bbd0 0%, #fce4ec 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: #6d4c41;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.container.new-theme {
+    background: rgba(255, 182, 193, 0.7);
+    border-radius: 40px;
+    box-shadow: 0 8px 32px 0 rgba(255, 182, 193, 0.25);
+    padding: 60px 48px;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+h1, .title {
+    font-size: 2.2em;
+    color: #ad1457;
+    font-weight: 700;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px #fff6f9;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 80px;
+    position: relative;
+    height: 260px;
+}
+
+.btn {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 16px rgba(255, 182, 193, 0.25), 0 1.5px 8px rgba(173, 20, 87, 0.12);
+    outline: none;
+}
+
+.yes-btn {
+    background: linear-gradient(90deg, #f48fb1 0%, #ce93d8 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(244, 143, 177, 0.25), 0 1.5px 8px rgba(206, 147, 216, 0.12);
+}
+
+.no-btn {
+    background: linear-gradient(90deg, #ffb6b9 0%, #fcd1d1 100%);
+    color: #ad1457;
+    box-shadow: 0 4px 16px rgba(255, 182, 185, 0.25), 0 1.5px 8px rgba(252, 209, 209, 0.12);
+}
+
+.btn:hover {
+    transform: scale(1.12);
+    filter: brightness(1.08);
+    box-shadow: 0 8px 24px rgba(244, 143, 177, 0.35);
+}
+
+.gif_container img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 24px;
+    margin-top: 16px;
+    box-shadow: 0 4px 16px rgba(255, 182, 193, 0.25);
+}
+
+.feedback {
+    margin-top: 24px;
+    font-size: 1.1em;
+    color: #ad1457;
+    min-height: 32px;
+    transition: opacity 0.3s;
+}
+
+/* Responsividad */
+@media (max-width: 700px) {
+    .container.new-theme {
+        padding: 30px 10px;
+        max-width: 95vw;
+    }
+    .buttons {
+        gap: 16px;
+        height: 180px;
+    }
+    h1, .title {
+        font-size: 1.3em;
+    }
+}
